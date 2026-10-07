@@ -1,0 +1,13 @@
+interface:
+  display_name: 论文精读与组会汇报
+  short_description: 单篇论文精读、Slides制作与审阅、逐字稿及答疑的完整工作流
+  default_prompt: 请使用 $read-paper-to-slides 精读这篇论文，解释必要背景，并根据我的需要继续准备组会 Slides 和逐字稿。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
