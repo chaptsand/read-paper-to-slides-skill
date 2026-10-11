@@ -52,3 +52,40 @@ For a requested editable artifact, use the presentation capability and its rende
 Record the active deck version, actual order, final terminology, equations, and result interpretation. Resolve important factual errors before using the deck as a script source. If the deck changes later, update the affected script pages without silently retaining old numbering.
 
 Keep source notes and resolved questions available for Q&A. Do not require another confirmation when the user has already authorized the next stage.
+
+## Design from comprehension bottlenecks
+
+Before committing to an outline, identify the two or three places where listeners are most likely to lose the argument. Ask what prerequisite object, original diagram, simple example, or execution trace would remove each barrier. Devote space according to technical difficulty and scientific centrality rather than paper section length.
+
+A good sequence may show the target models before discussing their components, the full method overview before its sub-agents, and an unfamiliar decision problem before its optimization rule. Insert an external prerequisite only when the later paper-specific step benefits. Cite or label prerequisite content as general background, never as a paper contribution.
+
+## Revisit the same figure progressively
+
+Prefer a faithful, recognizable original figure to a freshly synthesized replacement when the original is sufficient. Consider a reveal sequence:
+
+1. Show the full system to establish spatial context.
+2. Focus on the region being discussed by framing, cropping, highlighting, or enlarging it.
+3. Return to the overview or the next region without redefining previous modules.
+
+Use the same treatment for pseudo-code: expose the algorithm once, then focus on selection logic, execution/reward update, and one concrete candidate as needed. Each repeated slide must have a **new explanatory purpose**, not simply restate the same content. Keep original labels and symbol identities readable. Never imply a proposed teaching schematic or highlight came from the authors unless it actually did.
+
+## Turn an algorithm into an observable process
+
+Identify the algorithm's control state (e.g., per-arm statistics), the choice step (e.g., select hypothesis family), the refinement (generate a concrete experiment), the actual evaluation (code run/model retraining), and the update that changes the next choice. Put these in a coherent order and test whether the audience can explain the loop without reading the pseudo-code aloud.
+
+When useful, revisit an architecture slide and point to the **same named component** used in the algorithm's running example. Distinguish the selected family of hypotheses from the single executable candidate and from the performance metric that evaluates it. Mark an illustrative example clearly when it is not reported in the source.
+
+## Content density and evidence
+
+Slides can be restrained and spacious or use dense original evidence. Choose deliberately:
+
+- Prefer a complete original figure when simplifying it would break an important dependency.
+- Prefer a compact equation with a short explanatory anchor when an objective or decision rule is central.
+- Prefer original experimental tables with selected cells emphasized to ungrounded performance claims or decorative infographics.
+- Put extensive explanation in the oral script when the visual already conveys the object; avoid gratuitous paragraph blocks.
+
+Do not reproduce a particular successful deck's 30 pages, colors, typography, or section proportions. Do not add stock images, novelty figures, extra Q&A slides, or lecture-style tutorials unless they serve a concrete listener need.
+
+## Scientific meaning of results
+
+For each major result, align: research question, evaluated unit and task, protocol, metric direction, compared systems, and justified inference. Make constraints and exceptions visible when they change interpretation. Distinguish automation success from scientific novelty or causal proof. If the user challenges a paper's motivation or importance, consider how to reflect a grounded discussion in the final narrative, but do not attribute it to the original authors.

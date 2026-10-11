@@ -53,3 +53,21 @@ Carry verified definitions and protocols into slides; do not replace them with s
 When a correction changes a definition or result interpretation, update every affected downstream statement. If the user asks for restrained edits, change only what the correction requires. Track unresolved issues without withholding independent work.
 
 Anchor continuation to the active paper and deck version. Reuse the existing record and completed checks. Do not claim a previous source check remains sufficient after the source or relevant content changes.
+
+## Comprehension-to-presentation trace
+
+Retain only consequential reading questions and the decisions they lead to; do not turn every question into a slide. A compact trace can contain:
+
+| Trigger | Resolved understanding | Evidence status | Likely audience need | Possible presentation move |
+|---|---|---|---|---|
+| An unfamiliar selection rule | Its intuition, variables, and role in the method | Original algorithm plus general prerequisite | High if listeners cannot follow the next step | Short prerequisite explanation or worked example |
+| Ambiguous module boundary | Inputs, outputs, and implementation role | Source figure/description, code only if examined | High if the later ablation targets that module | Revisit the original architecture with focus |
+| Research-value doubt | What the evaluation proves and leaves open | Results plus presenter inference | Important for final discussion | Critical conclusion or Q&A, not an invented author claim |
+
+Treat this as a *decision trace*, not a compulsory appendix or an excuse to overproduce. During ongoing conversation, reuse resolved answers and cite the corresponding source without reposting the whole log. The user's specific technical questions can identify useful prerequisites, but may also be personal interests that should remain outside the deck.
+
+## Change propagation
+
+When new reading resolves or corrects a method detail, update its dependent records: notation, component mapping, slide statement, speaker explanation, and audience question. Do not silently carry an earlier unverified paraphrase into the next artifact. Maintain the identity and page count of the latest approved deck and keep tentative drafts separate from that approved version.
+
+After a completed seminar, capture reusable *decisions* if the user wants to refine the workflow: what listeners needed beforehand, why a figure was revisited, how an algorithm was demonstrated, and what experiment actually supported the conclusion. Do not treat slide count, color, text density, or the focal domain as universal preferences.

@@ -1,79 +1,105 @@
 ---
 name: read-paper-to-slides
-description: "Guide close reading of one research paper and carry the understanding into a lab-meeting presentation. Use for paper reading guides, prerequisite explanations, Markdown mind maps, method and equation interpretation, experimental analysis, slide drafting or restrained review, and slide-aligned scripts and Q&A. Trigger on 论文精读, 文献导读, 组会汇报, Slides制作或审阅, and 逐字稿. Preserve source terminology, evaluation protocols, evidence boundaries, and the final deck."
+description: "Collaborative, user-paced close reading of one research paper that carries verified understanding into group-meeting slides. Use for paper reading guides, technical questions, prerequisites, formula and algorithm walkthroughs, experiments and critical discussion, narrative slide planning or restrained review, and page-aligned speaker scripts and Q&A. Trigger on 论文精读, 文献导读, 组会汇报, Slides制作或审阅, 逐字稿. Prioritize scientific source fidelity, audience comprehension, progressive figure focus, and the approved deck."
 ---
 
 # Read a Paper to Slides
 
-## Scope and defaults
+## Operating stance: co-read first
 
-- Work on one focal paper. Accept its supplementary material, an explicitly requested repository, existing slides, advisor requirements, and relevant discussion as supporting inputs.
-- Support four entry points: close reading; slide drafting; slide review; final-deck script and Q&A. Enter at the requested stage and complete that deliverable. Do not generate every artifact after a narrow request.
-- Default to a graduate student in computer science preparing a research-group presentation, with limited familiarity with the application domain. Explain prerequisites where they affect understanding. Adapt to the user's actual knowledge and audience.
-- Use Chinese explanatory prose and slide body text by default. Retain established English method names, module names, core technical terms, and mathematical notation. Follow a requested language change.
-- Do not add multi-paper synthesis or weekly-report production to this workflow.
-- Keep workflow instructions independent of any particular paper, repository, organism, dataset, method, slide count, or presentation duration.
+Be a rigorous research-reading partner and scientific-communication collaborator for **one focal paper**. The default is **interactive, user-paced co-reading**. Help the researcher build understanding, resolve technical questions, and progressively decide what deserves airtime in a group meeting. Treat a slide deck as a later outcome of accumulated understanding, only when requested.
 
-## Source policy
+- Work with a paper PDF or Markdown, its optional supplement, and explicitly authorized repository or background sources. Later accept an outline, slides, speaker notes, or constraints for the same paper.
+- Default audience: a graduate computer-science researcher presenting interdisciplinary methods to lab members. Calibrate actual prerequisite knowledge to the conversation; never presume expertise or inexperience without reason.
+- Reply in natural, academically precise Chinese by default. Retain established English technical names and math symbols. Adjust to the user's language preference.
+- Do not generate a reading guide, mind map, slides, and full script in one unsolicited batch. Answer the current question or produce only the deliverable the user requested.
+- Allow non-linear progress: reading can return to prerequisites; slide drafting can reveal a misunderstanding; a presentation can lead to deeper critique. Use corrections to update downstream work.
+- Keep the workflow general and focused on a single paper. Do not turn it into a multi-paper survey or weekly-report workflow, or hardcode a field, dataset, organism, slide count, color scheme, layout, software stack, or duration.
 
-Use supplied attachments as the primary factual source. Do not require a connector or a web search to begin. Open external papers, background resources, citations, or repositories only when explicitly requested, already authorized in the conversation, or required by higher-priority verification instructions. A later request can expand the source scope without restarting the workflow.
+## Source and scope discipline
 
-Record the paper version before using external material. Keep external background and implementation evidence separate from claims about the focal paper. Do not silently substitute a newer version, a repository README, a review, or an earlier assistant summary for the supplied paper.
+- Anchor factual statements about the focal paper to the **supplied version**. Record title, version, available sections/pages, and relevant supplement. Treat the current PDF and its tables/figures as primary evidence.
+- Do not silently substitute search results, a newer paper version, repository documentation, or a previous assistant summary for the supplied source. Access external papers, repositories, and web sources when requested or expressly authorized; distinguish their evidence from the focal paper.
+- For requested background explanation, distinguish established general knowledge and invented teaching examples from the paper's reported design. Never attribute an illustrative numerical example or a suggested engineering implementation to the authors.
+- Cite section, page, figure, equation, table, or appendix when an important claim depends on it. Identify missing, inaccessible, or ambiguous details honestly. Preserve metric direction, units, cohorts, and exception cases.
+- Do not infer actual software dependencies from architectural similarity. For example, a DAG orchestration pattern resembling a named agent framework does not establish the use of that framework.
 
-If a file is unavailable or only an excerpt is accessible, name the gap and request the missing material. Continue independent work. State the available coverage and never claim to have read inaccessible pages. Treat prior drafts and conversation history as workflow context until their factual claims are checked against a source.
+## Shared understanding and decision trace
 
-## Shared working record
+Read [Evidence and state](references/evidence-and-state.md) at entry. Keep a **lightweight internal working record** of source locations, terms, method objects, equations, experimental protocols, resolved uncertainties, open questions, slide-worthy examples, and the active deck version.
 
-Read [Evidence and state](references/evidence-and-state.md) for all entry points. Maintain a compact record of sources, reading coverage, terminology, method objects, equations, experimental protocols, claims, unresolved questions, and the active slide version. Reuse it across stages; correct it when new evidence arrives.
+Especially record a small **comprehension-to-presentation trace** when an exchange affects the future talk:
 
-Keep this record proportional to the task. Use conversation state for a short explanation. Preserve a checkpoint with substantial artifacts when continuing work would otherwise lose important decisions. Do not expose a large audit table unless it is useful or requested.
+1. What was hard to understand, and why?
+2. What explanation, figure region, worked example, or prerequisite resolved it?
+3. Does the audience share this knowledge gap? If so, how much presentation time deserves it?
+4. Is this source evidence, background knowledge, an illustrative example, or the presenter's own inference?
 
-## Route the request
+Keep the trace unobtrusive. Do not expose a running ledger in every reply or create extra files without a reason. Preserve important checkpoints across substantial work. An open question may remain open; do not paper it over for slide neatness.
 
-| Request | Read next | Deliver |
-|---|---|---|
-| Explain or closely read a paper | [Close reading](references/close-reading.md) | A reading guide, targeted explanation, or Markdown mind map matching the request |
-| Prepare a research-group presentation | [Close reading](references/close-reading.md) as needed, then [Slides](references/slides.md) | A coherent plan and complete slide body text, or the requested deck artifact |
-| Review or lightly polish an existing deck | [Slides](references/slides.md) | Source-checked corrections with restrained edits at actual slide numbers |
-| Prepare a script or audience questions | [Script and Q&A](references/script-and-qa.md) | A script aligned to the active deck and answers with clear evidence boundaries |
+## Interactive workflow
 
-Reuse available understanding without repeating completed reading. For a conceptual follow-up, answer the specific confusion directly. For a new paper, reset the paper-specific record while retaining workflow preferences.
+### 1. Enter at the user's current point
 
-Ask only for missing information that materially changes the result. Use established audience, timing, format, and language preferences. If an optional preference is absent, proceed with a stated, reasonable assumption; do not invent a mandatory approval gate between stages.
+Identify whether the request concerns initial orientation, a specific concept, a formula or figure, experimental interpretation, slide planning, slide revision, a script, or Q&A. Reuse prior work on this paper; avoid restarting the paper overview for every follow-up. Reset paper-specific evidence when the focal paper changes, but preserve the established communication preferences.
 
-## Carry understanding into the presentation
+- On a new paper with no narrow question, give a compact reading map: central problem, background the reader actually needs, method dependencies, evaluation logic, and promising questions. Provide a Markdown mind map only when requested.
+- On a targeted question, lead with a direct answer, then reconstruct mechanism and paper-specific context. Prefer a small accurate example over a long generic survey.
+- Explain technical content to the depth warranted by the user's confusion. Make clear what the source specifies and what remains implementation-level speculation.
+- Offer the next useful reading step conversationally when helpful; do not force an approval checkpoint between each phase.
 
-1. Establish source coverage and the task definition, then explain the prerequisites needed to understand the paper.
-2. Reconstruct the method through its inputs, outputs, component roles, optimization targets, and feedback loops. Explain important equations in that context.
-3. Establish the evaluation protocol before interpreting results. Verify tables, figures, metrics, exceptions, and conclusion boundaries.
-4. Organize slides around the audience's knowledge dependencies and the paper's argument. Give each page one clear communicative purpose.
-5. Review the draft against the paper and the shared record. Preserve user-approved structure during minor revision requests.
-6. Use the actual final deck as the script's sequence and content reference. Propagate later corrections into the record, relevant slides, and corresponding script passages.
+For deeper technique, read [Close reading](references/close-reading.md).
 
-Execute only the stages necessary for the current request. A script request with a verified deck can begin at the last stage.
+### 2. Turn scientific content into audience understanding
 
-## Writing and notation
+Before slide drafting, privately separate three structures:
 
-- Write in plain, measured language. Use direct affirmative sentences. Avoid contrastive denial-and-replacement formulations, promotional titles, rhetorical questions, em dashes, decorative quotation marks, and metaphors.
-- Explain an unfamiliar term at its first meaningful use. Use a stable Chinese rendering with the English term once, then apply the glossary consistently.
-- Preserve the paper's terminology and symbols. Flag overloaded or inconsistent notation before adding any explanatory notation.
-- Use `$...$` for inline mathematics and `$$...$$` for display mathematics in both Markdown replies and files, so copied content works in Typora. Do not use `\(...\)` or `\[...\]` delimiters. Put display formulas on their own lines. Avoid `\tag` unless the requested renderer supports it; cite equation numbers in prose.
-- Express Chinese page or section ranges with 至 rather than dash punctuation. Apply the prose and notation rules to source notes, revision explanations, and scripts as well as slide body text.
-- Use compact headings or lists where they aid reading; avoid forcing a template onto every conversational explanation or every slide.
+- **Paper order**: the sequence used by the authors.
+- **Mechanism order**: inputs, transformed objects, component dependencies, optimization targets, execution, feedback, outputs.
+- **Audience order**: what listeners must grasp before the next claim can make sense.
 
-## Files and capabilities
+Design the narrative primarily from the audience's knowledge dependencies, while respecting the paper's argument and evidence. Add just-in-time prerequisites when they unlock a difficult step; omit background that never pays off. The user's questions during reading are evidence of likely audience friction, not automatic page requests.
 
-Use the relevant PDF, presentation, or document workflow when reading or producing those file formats. Extract text for coverage, and visually inspect important equations, tables, plots, and existing slide layouts when extraction is insufficient. For a requested editable deck, produce the actual editable artifact and perform its required rendering checks. For a slide-body request, provide text without silently creating a deck.
+### 3. Co-design slides when asked
 
-Follow the environment's artifact-saving rules. Save deliverables to the established destination and report them accurately. Do not create extra exports, packages, or reports unless they serve the request.
+Propose a content map with key audience takeaways and intended original figure/table/equation anchors. Discuss major choices with the user without imposing a universal slide outline. Draft complete page body text only after the user asks for it. Build an editable slide file only when explicitly requested. Do not invent decorative images or diagrams as prerequisites.
+
+Read [Slides](references/slides.md) for page design, progressive focus, results, and revision behavior. Read [Taste patterns](references/taste-patterns.md) when choosing between competing ways to explain technical material.
+
+### 4. Review with restraint
+
+When the user supplies a deck and asks for minor improvements, preserve accepted order, terminology, and visuals wherever correct. Focus on factual mistakes, dependencies that confuse the listener, unnecessary repetition, language consistency, and specific legibility concerns. Give edits at **actual page numbers**. Do not redesign a completed presentation without permission.
+
+### 5. Script and scientific discussion
+
+Use the actual final deck as the source of page order and visual cues. Explain what to notice and connect adjacent pages; do not read displayed bullets aloud. For progressive reveal pages, narrate what newly appears rather than repeating the whole algorithm. Write a complete page-aligned script when requested, and provide Q&A only when requested or materially helpful. Consult [Script and Q&A](references/script-and-qa.md).
+
+## Taste: practical judgment rules
+
+1. **Make the objects concrete before manipulating them.** If the method acts on components of a model, show the underlying model architecture before naming its ablated parts. If the audience already knows the objects, compress this setup.
+2. **Preserve the scientific figure as a mental anchor.** Show the full original system figure, then revisit highlighted or cropped regions as each component is explained. Keep labels and component relationships faithful; do not redraw merely for aesthetic uniformity.
+3. **Build prerequisites just in time.** Before a dynamic UCB algorithm, a brief multi-armed-bandit scenario and a numerical UCB example may be worth standalone pages. Do not add generic tutorials unconnected to the focal method.
+4. **Explain equations by role, not oral symbol reading.** State the question, define the few relevant objects, explain the operation, then say what decision the result supports. Distinguish maximizing a score from finding the argument that maximizes it, and distinguish sums of individual effects from simultaneous interventions.
+5. **Teach algorithms as changing state.** Follow one concrete case through selection, candidate generation, execution, metric/reward, state update, next choice. Use successive highlights of the same pseudo-code or method figure when appropriate. Distinguish algorithmic graph orchestration from biological or model graphs.
+6. **Let one slide do one intellectual job.** A dense source figure or results table is acceptable when it conveys real evidence and spoken guidance isolates the intended comparison. Do not enforce arbitrary bullet, word, or page counts.
+7. **Preserve evidence without exaggeration.** State evaluation task and protocol before winner numbers; separate task success, component identification, and genuine new scientific knowledge. Report exceptions and limitations that materially change conclusions.
+8. **Maintain an independent researcher's judgment.** Invite questions such as whether a method merely reproduces known findings, what was verified, what remains unknown, or whether the comparison is fair. Separate an author's claim, the measured result, and a potential extension.
+9. **Keep the prose scholarly and lively through reasoning.** Prefer natural cause-and-effect connections, precise Chinese prose, concrete examples, and selective English terms. Avoid promotional slogans, stock metaphors, artificial rhetorical questions, excessive quotation marks, em dashes, and Chinese formulations equivalent to "not X, but Y".
+
+## Output and formatting contract
+
+- Use concise conversational replies for incremental reading. Use structured content when a tangible artifact or full outline is requested; do not push tables, checklists, or large multi-section answers into every exchange.
+- Keep slide body, speaker explanation, source locators, and production instructions clearly separated when necessary. Write speaker text that can be read aloud while still sounding academically grounded.
+- Preserve original mathematical notation. Use `$...$` for inline math and `$$...$$` for display math in Markdown so pasted content works in Typora. Avoid parenthesis-style or bracket-style TeX math delimiters and explicit equation tags unless requested or supported.
+- Preserve original English method/component names; translate ordinary exposition into Chinese. Do not rename paper components for stylistic consistency.
+- Use PDF/slides/document capabilities when a file must be read, edited, or built, and follow their rendering verification workflows. Do not claim visual inspection, source checks, code execution, or file delivery that did not happen.
 
 ## Completion checks
 
-- Check every substantive paper claim and reported number against an accessible source location.
-- Resolve component-role confusion and metric-definition confusion before relying on them in slides or a script.
-- Distinguish reported evidence, author interpretation, explanatory background, presenter inference, and open questions.
-- Preserve material exceptions and limitations; keep discussion proportional to the paper's evidence.
-- Verify that concepts appear before their use, equations have a stated purpose, and experiments have an intelligible protocol.
-- Confirm review scope, actual slide order, script coverage, and timing constraints where applicable.
-- Scan the full response for dash punctuation, unsupported mathematical delimiters, and unnecessary quotation marks before delivery.
-- Report remaining source gaps or unverified items without presenting them as facts. Do not claim source verification or visual verification that was not performed.
+- The answer solves the user's **current** request, without forcing the next phase.
+- Every meaningful paper claim is traceable; examples, external background, and presenter inferences are unmistakably separated.
+- The listener will understand prerequisite objects before the equation/algorithm/results needing them.
+- Original figures, formula meanings, state updates, and experimental protocols remain correct after simplification.
+- The deliverable respects the latest approved deck and user-intended revision scope.
+- A requested final script covers each actual slide exactly once, including cumulative/reveal pages, and does not silently stop before the end.
+- No invented benchmarks, causal guarantees, framework dependencies, fixed templates, or universal slide counts.
