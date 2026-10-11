@@ -14,6 +14,8 @@ Use headings that match actual slide numbers and titles. Cover all requested pag
 
 On each page, introduce the visible subject, explain its key mechanism or comparison, state the supported takeaway, and connect naturally to the next page. Adjust this pattern to the content; do not use identical opening and closing sentences throughout.
 
+For successive views of one figure or algorithm, continue the same referent or running example and explain the newly highlighted region. Treat progressive pages as a continuous explanation.
+
 Explain what the audience should look at in a figure or table. Do not read every cell or recite displayed bullets. Explain equations through their purpose, objects, and operations rather than reading all symbols aloud.
 
 Use small teaching clarifications that remain consistent with the deck and paper. Identify inference or an illustrative example in spoken language. Keep unverified implementation details and speculative mechanisms out of factual narration.
@@ -42,12 +44,3 @@ Check page count and order, terminology, visible numerical values, metric interp
 
 Report source or slide gaps plainly. Deliver the complete requested script or Q&A set; do not provide only an outline when a full draft was requested.
 
-## Voice, continuity, and progressive reveal
-
-Compose spoken academic Chinese with understandable cause-and-effect links. Prefer one concrete transition or example to stock opening and closing sentences on every slide. Explain why a displayed equation or figure matters, then advance the scientific argument. Do not recite every variable on screen, spell out a complete code listing, or turn the script into formal written exposition.
-
-For successive slides that reuse one figure or Algorithm 1, keep an explicit running referent. Explain the newly highlighted node or line and how it changes the state; resist repeating the full overview. If two pages are successive animation states, write the latter as a continuation. On an architecture slide, point to the module later used as the worked example.
-
-Maintain a restrained, critical conclusion. Distinguish the author's contribution from what was experimentally demonstrated and the presenter's independent interpretation. A research question raised during reading may be the strongest Q&A topic even when absent from the visible deck. Do not introduce it as a factual finding.
-
-Never assume that a long response displayed in the model interface is fully visible to the user. For complete-script requests, prefer a verified file artifact when long output would risk truncation, with clear page coverage and an inspectable output; if a text response is requested, ensure every actual page is present before claiming completion.
