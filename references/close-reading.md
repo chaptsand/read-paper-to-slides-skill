@@ -22,7 +22,7 @@ Read the formal definitions, algorithm, architectural figure, and implementation
 
 Distinguish the optimized object from the model that evaluates or consumes it. If a downstream model is retrained for each candidate, explain that procedure even when its architecture is fixed. Preserve feature inputs and other dependencies that a simplified graph-only pipeline would hide.
 
-Use small teaching examples only when they clarify a concrete operation. Label them as illustrative. Do not invent a module, result, or exact parameter setting to fill a gap.
+Use small teaching examples when they clarify a concrete operation, and map their objects back to the paper. Label them as illustrative. Do not invent a module, result, or exact parameter setting to fill a gap. Distinguish conceptual similarity to a named framework from verified software usage.
 
 ## Explain equations
 
@@ -34,7 +34,7 @@ For each equation needed to understand the argument:
 4. Connect its output to selection, training, inference, or evaluation.
 5. State important assumptions, normalization, tradeoffs, and interpretation limits.
 
-Preserve the original equation and notation before simplifying it. Distinguish a definition, an optimization objective, a heuristic, and a proved result. Do not turn a mathematical expectation into an unsupported description of the implemented evaluation procedure.
+Use the depth needed for the current question; these steps are explanation aids, not compulsory reply headings. Preserve the original equation and notation before simplifying it. Distinguish a definition, an optimization objective, a heuristic, and a proved result. Do not turn a mathematical expectation into an unsupported description of the implemented evaluation procedure.
 
 ## Read the experiments
 
@@ -46,6 +46,8 @@ Explain what each baseline and ablation changes and what conclusion it can suppo
 
 Read exceptions as part of the result. Retain ties, reversals, task dependence, and restrictions on generalization. Do not infer an unreported benchmark number or a statistical conclusion.
 
+Distinguish reproduction, automation, recovery of known findings, and new scientific insight when assessing what the experiments establish. Discuss research value or extensions when the user's question calls for it.
+
 Use case studies to connect the method to a concrete observed change. Explain whether a case supports feasibility, interpretability, transfer, or effectiveness; do not elevate one example into a universal conclusion.
 
 ## Deliver the requested reading material
@@ -56,28 +58,3 @@ For a Markdown mind map, use meaningful nested headings or lists: problem, prere
 
 For a targeted question, lead with the relationship or definition that resolves it, then give the necessary mechanism and source evidence. Separate paper-specific terminology from established disciplinary usage. Avoid reopening the entire reading workflow.
 
-## Collaborative question-handling patterns
-
-For an incremental query, use this order when appropriate:
-
-1. Give the answer that resolves the precise confusion in the first paragraph.
-2. Locate the concept inside the focal paper's task, figure, equation, or experimental protocol.
-3. Explain the minimum prerequisite needed to follow the mechanism, using a tiny example if useful.
-4. Map the example back to the paper's actual objects and name one important limitation or ambiguity.
-5. Stop when the requested depth is satisfied. Do not automatically start presentation production.
-
-Do not force five numbered headings into every reply. A one-paragraph answer may suffice for a local question. For a deep method walkthrough, systematically trace the inputs, decisions, modified objects, execution, feedback, and downstream consequences.
-
-### Prerequisites as bridges
-
-Add background only when it pays off in the paper. For example, when the paper uses a bandit selection rule, explain the exploration-exploitation dilemma before the formula, then show how an abstract arm, pull, observation, and reward map to the paper's real entities. A numerical toy example can clarify why a lower empirical mean might still be selected. Mark toy numbers as invented.
-
-When a user asks whether a described graph execution resembles a named orchestration framework, distinguish conceptual similarity from verified software usage. When they ask what a maximizing-set formula means, distinguish a set-valued argmax from the objective value and from joint removal of the chosen components.
-
-### Read for scientific significance
-
-Track the distinction between recovering findings already reported in a paper, reproducing published evaluations, discovering a new biological or algorithmic mechanism, and demonstrating reliable autonomous scientific workflow execution. Invite independent critique when the user's question calls for it; do not inflate results or issue superficial praise. Compare the measured evidence with the stated research claim before speculating about extensions.
-
-### Evolving reading state
-
-A newly discovered gap may affect an earlier assumption; reopen that assumption. If slide design exposes a missing prerequisite, return to close reading briefly and resolve it before writing the slide. Treat this as ordinary co-reading, not as failure to finish a formal stage.
